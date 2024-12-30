@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tokens de Almuerzo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-6 text-center">Sistema de Tokens de Almuerzo</h1>
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <div class="mb-4">
+                <h2 class="text-xl font-semibold">Fecha: {{ fecha }} <br> Hora: {{ hora }}</h2>
+            </div>
+            <table class="min-w-full table-auto"> 
+                <thead>
+                    <tr class="bg-gray-200">
+                        <th class="px-4 py-2">ID</th>
+                        <th class="px-4 py-2">Nombre</th>
+                        <th class="px-4 py-2">Departamento</th>
+                        <th class="px-4 py-2">Tokens Disponibles</th>
+                        <th class="px-4 py-2">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for empleado in empleados %}
+                    <tr class="border-b">
+                        <td class="px-4 py-2 text-center">{{ empleado.id }}</td>
+                        <td class="px-4 py-2 text-center">{{ empleado.nombre }}</td>
+                        <td class="px-4 py-2 text-center">{{ empleado.departamento }}</td>
+                        <td class="px-4 py-2 text-center">
+                            <span class="px-2 py-1 rounded-full {% if empleado.tokens_almuerzo > 0 %}bg-green-200 text-green-800{% else %}bg-red-200 text-red-800{% endif %}">
+                                {{ empleado.tokens_almuerzo }}
+                            </span>
+                        </td>
+                     </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
