@@ -17,10 +17,10 @@ class EscanerQR:
             user='root',
             password='root'
         )
-        self.cursor = self.conexion.cursor(dictionary=True)
+        self.cursor = self.conexion. cursor(dictionary=True)
         self.cap = cv2.VideoCapture(0)
         self.codigos_registrados = set()
-        self.carpeta_destino = 'C:/Users/VIVOBOOK/Desktop/codigos_qr_intraplas2/registro_tokens_intraplas'
+        self.carpeta_destino = 'C:/Users/andres.salcedo.INTRAPLAS/Desktop/tokens_intraplas/registro_tokens_intraplas'
         
         if not os.path.exists(self.carpeta_destino):
             os.makedirs(self.carpeta_destino)
@@ -65,7 +65,7 @@ class EscanerQR:
             hoja['A1'] = 'ID'
             hoja['B1'] = 'NOMBRE'
             hoja['C1'] = 'ÁREA'
-            hoja['D1'] = 'TOKENS'
+            hoja['D1'] = 'TOKENS RESTANTES'
             hoja['E1'] = 'FECHA'
             hoja['F1'] = 'HORA'
             

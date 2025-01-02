@@ -81,7 +81,7 @@ def generar_codigos_qr(QR_INTRAPLAS):
         print(f"Ocurrió un error inesperado: {e}")
 
 # Definir la carpeta de salida
-QR_INTRAPLAS = 'C:/Users/VIVOBOOK/Desktop/codigos_qr_intraplas2/QR_INTRAPLAS'
+QR_INTRAPLAS = 'C:/Users/andres.salcedo.INTRAPLAS/Desktop/tokens_intraplas/QR_INTRAPLAS'
 
 # Llamar a la función para generar códigos QR
 generar_codigos_qr(QR_INTRAPLAS)
