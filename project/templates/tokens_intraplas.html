@@ -20,12 +20,12 @@
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         <li class="nav-item mb-1">
                             <a href="#" class="nav-link align-middle px-0">
-                                <i class="bi-house"></i> <span class="ms-1 fs-5 d-none d-sm-inline text-white">Home</span>
+                                <i class="bi-house"></i> <span class="ms-1 fs-6 d-none d-sm-inline text-white">Dashboard</span>
                             </a>
                         </li>
                         <li>
                             <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="bi-grid"></i> <span class="ms-1 fs-5 d-none d-sm-inline text-white">Empleados</span> </a>
+                                <i class="bi-grid"></i> <span class="ms-1 fs-6 d-none d-sm-inline text-white">Empleados</span> </a>
                                 <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                             </ul>
                         </li>
@@ -42,18 +42,18 @@
             <div class="col py-3">
                 <div class="text-center mb-4">
                     <h2>Sistema de Tokens de Almuerzo</h2>
-                    <h3>{{fecha}} - {{hora}}</h3>
+                    <!-- <h3>{{fecha}} - {{hora}}</h3> -->
                 </div>
                 <div class="container-fluid border border-5 rounded-4">
                 <table class="table">
                     <theah>
                     <tr>
                     <th class="text-center">ID</th>
-                    <th class="text-center">Nombre</th>
-                    <th class="text-center">Departamento</th>
-                    <th class="text-center">Tokens Disponibles</th>
-                    <th class="text-center">Acciones</th>
-                    </tr>
+                   <th class="text-center">Nombre</th>
+                   <th class="text-center">Departamento</th>
+                   <th class="text-center">Tokens Disponibles</th>
+                   <th class="text-center">Acciones</th>
+                   </tr>
                     </thead>
                     <tbody>
                         {% for empleado in empleados %}

@@ -36,7 +36,7 @@ class EscanerQRWeb:
             print(f"Error al actualizar empleado: {e}")
             return False
 
-@app.route('/')
+@app.route('/empleados')
 def index():
     escaner = EscanerQRWeb()
     empleados = escaner.obtener_empleados()
