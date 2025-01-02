@@ -45,6 +45,10 @@ def index():
                          fecha=datetime.now().strftime('%Y-%m-%d'), 
                          hora=datetime.now().strftime('%H:%M:%S'))
 
+@app.route('/Dashboard')
+def dashboard():
+    return render_template('Dashboard.html')
+
 @app.route('/actualizar_empleado', methods=['POST'])
 def actualizar_empleado():
     escaner = EscanerQRWeb()
