@@ -19,7 +19,7 @@
                     </a>
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         <li class="nav-item mb-1">
-                            <a href="Dashboard" class="nav-link align-middle px-0">
+                            <a href="/Dashboard" class="nav-link align-middle px-0">
                                 <i class="bi-house"></i> <span class="ms-1 fs-6 d-none d-sm-inline text-white">Dashboard</span>
                             </a>
                         </li>
@@ -31,14 +31,33 @@
                     </ul>
                     <hr>
                     <div class="dropdown pb-4">
-                       user 
+                        <a href="/">
+                            user
+                        </a>
                     </div>
                 </div>
             </div>
             <!--FIN SIDEBAR-->
 
             <div class="col py-3">
-                ....
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="card mb-3 border-5" style="max-width: 540px;">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img src="../static/img/usuario.png" class="img-fluid rounded-start ms-3 p-1 mt-1" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body ms-3">
+                                      <h2 class="card-title fw-bold">EMPLEADOS</h2>
+                                      <p class="card-text"><small class="text-body-secondary fs-3 fw-semibold" id="contador_usuarios">{{ total_usuarios }}</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                </div>
             </div>
     
 </body>
